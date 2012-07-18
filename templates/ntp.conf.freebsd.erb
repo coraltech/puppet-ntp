@@ -18,6 +18,6 @@
 # The option `maxpoll 9' is used to prevent PLL/FLL flipping on FreeBSD.
 #
 # Managed by puppet class { "ntp": servers => [ ... ] }
-<% [servers_real].flatten.each do |server| -%>
+<% [servers].flatten.each do |server| -%>
 server <%= server %>
 <% end -%>

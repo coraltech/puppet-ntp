@@ -72,7 +72,7 @@ class ntp::params {
       }
     }
     default: {
-      fail("The ntp module is not  currently supported on ${::operatingsystem}")
+      fail("The ntp module is not currently supported on ${::operatingsystem}")
     }
   }
 }

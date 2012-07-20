@@ -6,7 +6,7 @@ class ntp::params {
   #-----------------------------------------------------------------------------
   # General configurations
 
-  if $::hiera_exists {
+  if $::hiera_ready {
     $ntp_package_ensure = hiera('ntp_package_ensure', $ntp::default::ntp_package_ensure)
     $ntp_service_ensure = hiera('ntp_service_ensure', $ntp::default::ntp_service_ensure)
     $servers            = hiera('ntp_servers', false)

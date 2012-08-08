@@ -41,7 +41,7 @@ class ntp (
   $service         = $ntp::params::os_ntp_service,
   $service_ensure  = $ntp::params::ntp_service_ensure,
 
-) {
+) inherits ntp::params {
 
   #-----------------------------------------------------------------------------
   # Installation

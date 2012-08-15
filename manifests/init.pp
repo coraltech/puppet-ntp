@@ -33,13 +33,13 @@
 # [Remember: No empty lines between comments and class definition]
 class ntp (
 
-  $package         = $ntp::params::os_ntp_package,
-  $package_ensure  = $ntp::params::ntp_package_ensure,
-  $config          = $ntp::params::os_ntp_config,
-  $config_template = $ntp::params::os_config_template,
-  $servers         = $ntp::params::os_servers,
-  $service         = $ntp::params::os_ntp_service,
-  $service_ensure  = $ntp::params::ntp_service_ensure,
+  $package         = $ntp::params::package,
+  $package_ensure  = $ntp::params::package_ensure,
+  $config          = $ntp::params::config,
+  $config_template = $ntp::params::config_template,
+  $servers         = $ntp::params::servers,
+  $service         = $ntp::params::service,
+  $service_ensure  = $ntp::params::service_ensure,
 
 ) inherits ntp::params {
 
